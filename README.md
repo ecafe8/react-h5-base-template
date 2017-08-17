@@ -10,15 +10,15 @@
 
 #### 依赖安装
 ```
-npm i
+yarn
 ```
 
 #### 启动
 ```
-npm start
+sinx start
 ```
 
 #### 打包
 ```
-npm run build
+sinx build
 ```
