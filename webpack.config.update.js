@@ -22,13 +22,31 @@ module.exports = (config) => {
             fallback: 'style-loader',
             use: ['css-loader'],
           }),
+        },
+        {
+          test: /\.mp3$/,
+          exclude: /node_modules/,
+          loader: 'file-loader',
+          query: {
+            // CSS图片目录
+            name: IS_DEV ? '[path][name].[ext]' : 'assets/mp3/[hash].[ext]',
+          }
+        },
+        {
+          test: /\.mp4/,
+          exclude: /node_modules/,
+          loader: 'file-loader',
+          query: {
+            // CSS图片目录
+            name: IS_DEV ? '[path][name].[ext]' : 'assets/video/[hash].[ext]',
+          }
         }, {
           test: /\.(png|jpg|gif)$/,
           loader: 'url-loader',
           query: {
             limit: 10000,
             // CSS图片目录
-            name: '[path][name].[ext]'
+            name: IS_DEV ? '[path][name].[ext]' : 'assets/[name].[ext]',
           }
         }, {
           test: /\.less$/,
