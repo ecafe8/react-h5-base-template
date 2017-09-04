@@ -22,3 +22,8 @@ sinx start
 ```
 sinx build
 ```
+
+
+#### 其他
+
+[检查即将要提交的代码](https://github.com/okonet/lint-staged)
