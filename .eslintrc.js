@@ -18,7 +18,7 @@ module.exports = {
   ],
   "parserOptions": { // 基于 eslint@2.x
     "sourceType": "module",
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "ecmaFeatures": {
       "jsx": true // 迁移说明: http://eslint.org/docs/user-guide/migrating-to-2.0.0
     }
